@@ -6,3 +6,13 @@ require(['../scripts'], function (common) {
   var testView = new Asteroids.GameView(context);
   testView.start();
 });
+
+require.config({
+  packages: [
+      {
+        name: 'physicsjs',
+        location: 'path/to/physicsjs',
+        main: 'physicsjs-VERSION.min'
+      }
+  ],
+});
