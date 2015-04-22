@@ -5,4 +5,4 @@ require(['../scripts'], function (common) {
   var context = canvas.getContext('2d');
   var testView = new Asteroids.GameView(context);
   testView.start();
-})
+});
