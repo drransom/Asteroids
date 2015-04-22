@@ -1,27 +1,10 @@
 <!DOCTYPE html>
 <head>
 
+          <h1>Hello World</h1>
 </head>
 <body>
   <canvas id="canvas" width="500" height="500"></canvas>
-  <script src="scripts/movingObject.js"></script>
-  <script src="scripts/utils.js"></script>
-  <script src="scripts/asteroid.js"></script>
-  <script src="scripts/game.js"></script>
-  <script src="scripts/gameView.js"></script>
-  <script src="scripts/ship.js"></script>
-  <script src="lib/keymaster-master/keymaster.js"></script>
-  <script src="scripts/bullet.js"></script>
-
-  <script>
-    var testAsteroid = new Asteroids.Asteroid([150, 150]);
-    var canvas = document.getElementById('canvas');
-    var context = canvas.getContext('2d');
-    // testAsteroid.draw(context);
-    //
-    // var testGame = new Asteroids.Game();
-    // testGame.draw(context);
-    var testView = new Asteroids.GameView(context);
-    testView.start();
-  </script>
+  <script data-main="app" src="scripts/require.js"></script>
 </body>
+</html>
