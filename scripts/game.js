@@ -14,7 +14,7 @@
     // img.onload = function () {
     //   ctx.drawImage(img, 0, 0);
     // };
-    img.src = 'spaceImage.jpeg';
+    img.src = './assets/spaceImage.jpeg';
     this.background = img;
   };
 
