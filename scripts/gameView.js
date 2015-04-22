@@ -9,7 +9,7 @@
   };
 
   Asteroids.GameView.prototype.bindKeyHandlers = function () {
-    ship = this.game.ship;
+    var ship = this.game.ship;
     key('up', function () {
         ship.power([0, -1])
       });
