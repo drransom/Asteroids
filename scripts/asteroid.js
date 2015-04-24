@@ -1,13 +1,15 @@
-(function(){
+(function() {
+  "use strict";
   if (window.Asteroids === undefined) {
     window.Asteroids = {};
   }
 
   Asteroids.COLOR = "brown";
-  Asteroids.RADIUS = 10;
+  Asteroids.RADIUS = 30;
 
   Asteroids.Asteroid = function (pos, game) {
     var args = {
+      shape: "Polygon",
       pos: pos,
       color: Asteroids.COLOR,
       radius: Asteroids.RADIUS,
@@ -15,7 +17,7 @@
       game: game,
       wrappable: true
     };
-    Asteroids.MovingObject.call(this, args)
+    Asteroids.MovingObject.call(this, args);
   };
 
   var Asteroid = Asteroids.Asteroid;
@@ -28,10 +30,5 @@
       this.game.remove(otherObject);
       this.game.remove(this);
     }
-  }
-  //
-  // testAsteroid = new Asteroid([150, 150]);
-  // var canvas = document.getElementById('canvas');
-  // var context = canvas.getContext('2d');
-  // testAsteroid.draw(context);
+  };
 })();
