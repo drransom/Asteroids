@@ -21,6 +21,10 @@ is limited to prevent asteroids from being pathologically long. The asteroids
 are also assigned a random radial velocity, which is constant throughout the
 lifetime of the game.
 
+The asteroids bounch off each other when they hit each other. This is accomplished
+by resetting the velocities to be parallel to the SAT.js `Response#overlapV` vector,
+as rotated to adjust for the difference in reference frames.
+
 Bullets and Explosions
 ----------------
 The bullets and explosions are all generated as SAT.js `Circles`. The bullets
