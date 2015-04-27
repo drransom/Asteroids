@@ -33,7 +33,8 @@ the game when the radius is <= 0.
 Input
 -----
 Input is based on [Keymaster][keymaster]. Spacebar files bullets and arrows
-rotate and/or move the ship. The bullet firing rate is throttled using `Window#SetTimeout`.
+rotate and/or move the ship. The bullet firing rate is throttled to 325 ms using
+`Window#SetTimeout`.
 
 Todos
 ==============
