@@ -31,7 +31,7 @@ objects that contain an SAT.js `Circle` The `Bullets` have predetermined dimensi
 Input
 -----
 Input is based on [Keymaster][keymaster]. Spacebar files bullets and arrows
-rotate and/or move the ship. The bullet firing rate is throttled to 325 ms using
+rotate and/or move the ship. The bullet firing rate is throttled to 250 ms using
 `Window#SetTimeout`.
 
 Todos
